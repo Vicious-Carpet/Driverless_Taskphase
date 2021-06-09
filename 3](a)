@@ -1,0 +1,5 @@
+def main():
+    print("enter list to check palindrome:")
+    l=list(map(str,input()))
+    return l==l[::-1]
+print(main())

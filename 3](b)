@@ -1,0 +1,12 @@
+# if the given list is palindrome print hex value
+
+def main():
+    print("enter list to check palindrome:")
+    l=list(map(str,input().split()))
+    if l==l[::-1]:
+        for i in l:
+            i=ord(i)
+            print(hex(i),end=" ")
+    else: print("FALSE")
+
+main()
